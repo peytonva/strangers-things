@@ -1,0 +1,419 @@
+*{
+  overflow: scroll;
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+ 
+*::after{
+    z-index:10!important;
+  }
+
+.col-md-8{
+    margin-top: 150px!important;
+}
+#current-page{
+    font-weight: bold;
+    color: black!important;
+}
+
+.page-up{
+  color: rgba(0, 0, 0, 0.762);
+  position: fixed;
+}
+
+.navbar-brand:hover{
+    color: black!important;
+    font-weight: initial!important;
+}
+
+.bg-dark {
+    background-color: rgb(190, 233, 233)!important;
+}
+
+.navbar-brand{
+    color: black!important;
+    font-family: 'Unica One', 'cursive'!important;
+    font-size: 40px!important;
+    padding-right: 300px
+}
+
+.nav-link, .edit-delete, .send-message{
+    color: rgba(0, 0, 0, 0.762)!important;
+    background-image:linear-gradient(to right, rgba(237, 215, 167, 0.961), rgb(190, 233, 233))!important;
+    /* border: 2px solid black!important; */
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 0 2pt white;
+    margin: 10px;
+    transition: all 0.3s ease 0s
+}
+
+ul.navbar-nav{
+  margin-left: 100px!important;
+}
+
+.nav-link:hover, .edit-delete:hover, .send-message:hover{
+    color:black !important;
+    box-shadow: 0 0 0 3pt white;
+    font-weight: bold;
+  }
+
+  .edit-delete{
+    margin-right: 0
+
+  }
+
+  #messageSubmitButton{
+    color: rgba(0, 0, 0, 0.762)!important;
+    background-image:linear-gradient(to right, rgba(237, 215, 167, 0.961), rgb(190, 233, 233))!important;
+    /* border: 2px solid black!important; */
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 0 2pt white;
+    margin: 10px;
+    transition: all 0.3s ease 0s
+  }
+
+  .list-unstyled{
+    font-family: default;
+    text-decoration: none;
+  }
+
+  a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.762);
+    font-family: 'Poppins', sans-serif!important
+  }
+
+  #blog-description{
+      font-family: 'Poppins', sans-serif!important;
+  }
+
+  a:hover{
+      color: black;
+      font-weight: bold;
+  }
+
+  .card-footer{
+      background-color: rgba(237, 215, 167, 0.961);
+  }
+
+  .my-4{
+    padding-top: 80px;
+    border-bottom: rgb(190, 233, 233)!important;
+    font-family: 'Unica One', 'cursive';
+  }
+
+  div.card.my-4{
+    padding-top: 100px!important;
+    outline: none!important;
+    border: none!important
+  }
+
+  #create-post{
+      padding-top: 0px!important;
+    
+  }
+
+  .h5.card-header{
+      margin-top: 0!important;
+  }
+
+  .mb-3.mt-4{
+      margin: 0!important;
+  }
+
+  .btn-secondary{
+      background-image: linear-gradient(to right, rgba(237, 215, 167, 0.961), rgb(190, 233, 233))!important;
+      color: rgba(0, 0, 0, 0.762)!important
+  }
+
+  .btn-secondary:hover{
+      color: black!important;
+      font-weight: bold;
+  }
+
+  input.form-control{
+    font-family: 'Poppins', sans-serif!important
+  }
+
+  input.form-control:focus{
+      outline:none!important;
+      box-shadow: 0 0 0 2pt rgb(190, 233, 233)!important;
+  }
+
+  textarea.form-control:focus{
+    outline:none!important;
+    box-shadow: 0 0 0 2pt rgb(190, 233, 233)!important;
+  }
+
+  #create-post{
+    visibility: hidden;
+  }
+
+  #log-out{
+    visibility: hidden;
+  }
+
+  #blog-description-text{
+      padding-top: 10px!important;
+  }
+
+  #blog-author-text{
+      padding-top: 10px!important;
+  }
+
+  #blog-price-text{
+      padding-top: 0px!important;
+  }
+
+  h5.card-header{
+    margin-top: 29px;
+    margin-bottom: 10px;
+    background-color:  rgba(237, 215, 167, 0.961);
+  }
+
+  .posted-by{
+    text-decoration: none;
+    color: black;
+  }
+
+  .text-muted{
+      color:rgba(0, 0, 0, 0.762)!important;
+  }
+
+  footer.py-5.bg-dark {
+      width: 100%!important;
+      margin: 0!important;
+      padding: 30px!important;
+  }
+
+  #submit-post{
+    background-image: linear-gradient(to right, rgba(237, 215, 167, 0.961), rgb(190, 233, 233))!important;
+    color:rgba(0, 0, 0, 0.762);
+    border-radius: 15px;
+    padding: 8px;
+    outline: none;
+    border: none;
+    font-family: 'Poppins' sans-serif!important;
+    box-shadow: 0 0 0 2pt white;
+  }
+
+  #submit-post:hover{
+      color: black;
+      font-weight: bold;
+  }
+
+  /*
+ *
+ * login-register modal
+ * Author: Creative Tim
+ * Web-autor: creative.tim
+ * Web script: http://creative-tim.com
+ * 
+ */
+ 
+/*  Shake animation  */
+
+.animated {
+  -webkit-animation-duration: 1s;
+	   -moz-animation-duration: 1s;
+	     -o-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	   -moz-animation-fill-mode: both;
+	     -o-animation-fill-mode: both;
+	        animation-fill-mode: both;
+}
+
+.animated.hinges {
+	-webkit-animation-duration: 2s;
+	   -moz-animation-duration: 2s;
+	     -o-animation-duration: 2s;
+	        animation-duration: 2s;
+}
+
+.animated.slow {
+	-webkit-animation-duration: 3s;
+	   -moz-animation-duration: 3s;
+	     -o-animation-duration: 3s;
+	        animation-duration: 3s;
+}
+
+.animated.snail {
+	-webkit-animation-duration: 4s;
+	   -moz-animation-duration: 4s;
+	     -o-animation-duration: 4s;
+	        animation-duration: 4s;
+}
+
+.shake {
+	-webkit-animation-name: shake;
+	-moz-animation-name: shake;
+	-o-animation-name: shake;
+	animation-name: shake;
+}
+
+button.close{
+    background-image: linear-gradient(to right, rgba(237, 215, 167, 0.961), rgb(190, 233, 233))!important;;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    border:rgb(190, 233, 233)
+}
+
+input.btn.btn-default{
+    background-image: linear-gradient(to right, rgba(237, 215, 167, 0.961), rgb(190, 233, 233))!important;
+    color:rgba(0, 0, 0, 0.762)
+}
+input.btn.btn-default:hover{
+    color: black;
+    font-weight: bold;
+}
+
+input.btn.btn-default:focus{
+    outline: none!important;
+    box-shadow: 0 0 0 2pt rgb(190, 233, 233)!important;
+}
+
+.login .modal-dialog{
+    width: 350px;
+}
+.login .modal-footer{
+    border-top: 0;
+    margin-top: 0px;
+    padding: 10px 20px 20px;
+}
+.login .modal-header {
+    border: 0 none;
+    padding: 15px 15px 15px;
+
+}
+
+.login .division {
+    float: none;
+    margin: 0 auto 18px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.login .division .line {
+    border-top: 1px solid #DFDFDF;
+    position: absolute;
+    top: 10px;
+    width: 34%;
+}
+.login .division .line.l {
+    left: 0;
+}
+.login .division .line.r {
+    right: 0;
+}
+.login .division span {
+    color: #424242;
+    font-size: 17px;
+}
+
+.login .btn-login, .registerBox .btn-register{
+    background-color: #00BBFF;
+    border-color: #00BBFF;
+    border-width: 0;
+    color: #FFFFFF;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    width: 100%;
+}
+.login .btn-login:hover, .registerBox .btn-register:hover{
+    background-color: #00A4E4;
+    color: #FFFFFF;
+}
+.login .form-control{
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.09);
+    box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.09) inset;
+    color: #FFFFFF;
+}
+.login .form-control:hover{
+    background-color: rgba(0,0,0,.16);
+}
+.login .form-control:focus{
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.04) inset;
+    background-color: rgba(0,0,0,0.23);
+    color: #FFFFFF;
+}
+.login .box .form input[type="text"], .login .box .form input[type="password"] {
+    border-radius: 3px;
+    border: none;
+    color: #5e5e5e;
+    font-size: 16px;
+    height: 46px;
+    margin-bottom: 5px;
+    padding: 13px 12px;
+    width: 100%;
+}
+
+.big-login, .big-register{
+    color: rgba(0, 0, 0, 0.762)!important;
+    background-image:linear-gradient(to right, rgba(237, 215, 167, 0.961), rgb(190, 233, 233))!important;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 0 2pt white;
+    margin: 10px;
+    transition: all 0.3s ease 0s
+}
+
+.big-login:hover, .big-register:hover{
+    color: black!important;
+    box-shadow: 0 0 0 3pt white;
+    font-weight: bold;
+  }
+
+/* .big-register{
+    background-color: rgba(0,0,0,.0);
+    color: #00bbff;
+    border-color: #00bbff;
+}
+.big-register:hover{
+    border-color: #00A4E4;
+    color:  #00A4E4;
+} */
+
+@-webkit-keyframes shake {
+	0%, 100% {-webkit-transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);}
+}
+
+@-moz-keyframes shake {
+	0%, 100% {-moz-transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {-moz-transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {-moz-transform: translateX(10px);}
+}
+
+@-o-keyframes shake {
+	0%, 100% {-o-transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {-o-transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {-o-transform: translateX(10px);}
+}
+
+@keyframes shake {
+	0%, 100% {transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+
+@media (max-width:400px){
+    .login .modal-dialog{
+        width: 100%;
+    }
+}
+
+  
+ 
